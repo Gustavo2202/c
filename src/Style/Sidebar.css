@@ -1,0 +1,63 @@
+aside{
+    width: 320px;
+    margin-bottom: 30px;
+    background-color: var(--white-100);
+    box-shadow: 0 0 9px 0 var(--white-50);
+    border-radius: 10px;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+aside strong{
+    font-size: 1.25rem;
+    text-align: center;
+    display: block;
+    color: var(--gray-zinc-900);
+
+}
+aside form{
+    margin-top: 30px;
+}
+aside form .input-block{
+    margin-top: 20px;
+}
+aside form .input-block label{
+    color: var(--gray-zinc-800);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+aside form .input-block input{
+    width: 100%;
+    height: 32px;
+    font-size: 0.875rem;
+    
+    background: var(--blue-sky-50);
+    color: var(--gray-zinc-900);
+    border: 0;
+    border-bottom: 3px solid var(--gray-zinc-800);
+    border-radius: 2px;
+}
+aside form .input-block textarea{
+     margin-top: 7px;
+     width: 100%;
+     height: 200px;
+     font-size: 0.875rem;
+     outline: none;
+
+     border: 0;
+     border-bottom: 3px solid var(--gray-zinc-800);
+     background: var(--blue-sky-50);
+     border-radius: 2px;
+     resize: none;
+}
+aside form button[type=submit]{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    background-color: var(--blue-sky-400);
+    color: var(--blue-sky-200);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

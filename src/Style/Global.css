@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("./Sidebar.css");
+@import url("./Main.css");
+
+:root {
+  /*gray */
+  --gray-zinc-800: #27272a;
+  --gray-zinc-900: #18181b;
+  --gray-stone-900: #1c1917;
+  --gray-500: #4b5563;
+
+  /* white*/
+  --white-50: #fdf4ff;
+  --white-100: #e8e8ff;
+
+  /* blue */
+  --blue-sky-50: #f0f9ff;
+  --blue-sky-100: #e0f2fe;
+  --blue-sky-200: #bae6fd;
+  --blue-sky-300: #7dd3fc;
+  --blue-sky-400: #38bdf8;
+  --blue-sky-500: #0ea5e9;
+  --blue-sky-600: #0284c7;
+  --blue-sky-700: #0369a1;
+  --blue-sky-800: #075985;
+  --blue-sky-900: #0c4a6e;
+  --blue-sky-950: #082f49;
+
+  /* Red*/
+  --red-400: #f87171;
+  --red-600: #dc2626;
+
+  /*Green*/
+  --emerald-500: #10b981;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  background-color: var(--gray-zinc-900);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+body,
+input,
+button,
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+@media (max-width: 1160px) {
+  body {
+    flex-direction: column;
+    align-items: unset;
+  }
+  aside {
+    width: 100%;
+    position: relative;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  main  .cardItens{
+    grid-template-columns: 1fr;
+  }
+}
